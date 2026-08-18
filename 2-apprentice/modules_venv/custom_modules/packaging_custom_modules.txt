@@ -1,0 +1,19 @@
+mkdir <dir_for_modules>
+cd <dir_for_modules>
+
+mkdir <module_dir>
+cd <module_dir>
+
+create module file
+create module
+
+create setup.py for packaging module in <module_dir>
+
+in <module_dir> run $ python3 setup.py sdist
+#this will create a distribution file within a directory called dist in the current directory
+#creates tar file in dist for distribution
+
+pip install <module>.tar.gz #to install the module
+
+within python, run help('modules') #should see the new module listed
+

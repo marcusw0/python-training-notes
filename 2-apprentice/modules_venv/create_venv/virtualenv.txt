@@ -1,0 +1,20 @@
+pip install virtualenv --upgrade
+
+virtualenv first_env #create new virtualenv
+
+cd first_env #first_env is a directory
+
+
+which python2 #displays where python2 is installed
+
+#setup first_env for python2
+virtualenv -p /usr/local/bin/python2 first_env
+
+#activate and use virtualenv
+source first_env/bin/activate
+
+ls -n #all of the files are still visible. The python environment is the only one that's modified
+pip list  #see tools currently installed in your current environment
+
+deactivate #deactivate virtualenv and return to the base environment
+
